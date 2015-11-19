@@ -65,7 +65,7 @@ class TodayAirViewController: UIViewController, BWWalkthroughViewControllerDeleg
     let SCREEN_IPHONE_6 = 2
     let SCREEN_IPHONE_6P = 3
     
-    let S_COLOR_NODATA:UInt = 0x56D69C
+    let S_COLOR_NODATA:UInt = 0x1F5A8C
     let S_COLOR_GOOD:UInt = 0x25BA84
     let S_COLOR_NORMAL:UInt = 0x389ED1
     let S_COLOR_BAD:UInt = 0xE2B328
@@ -94,17 +94,17 @@ class TodayAirViewController: UIViewController, BWWalkthroughViewControllerDeleg
     
     let adaptiveFontSize = (
         stationFontSize:40.0,
-        khaivalueFontSize:91.0,
-        khaititleFontSize:20.0,
-        khaistateFontSize:27.0,
-        updatetimeFontSize:20.0,
-        pm10titleFontSize:23.0,
-        pm10stateFontSize:22.0,
-        pm10valueFontSize:65.0,
-        pm10textFontSize:18.0,
-        airkoreaTermsFontSize:10.0,
+        khaivalueFontSize:100.0,
+        khaititleFontSize:19.0,
+        khaistateFontSize:32.0,
+        updatetimeFontSize:16.0,
+        pm10titleFontSize:22.0,
+        pm10stateFontSize:28.0,
+        pm10valueFontSize:76.0,
+        pm10textFontSize:17.0,
+        airkoreaTermsFontSize:11.0,
         othertitleFontSize:20.0,
-        othervalueFontSize:22.0
+        othervalueFontSize:24.0
     )
     
     let adaptieFontRatio = (
@@ -357,6 +357,7 @@ class TodayAirViewController: UIViewController, BWWalkthroughViewControllerDeleg
             self.pm10ValueLabel.textColor = self.switchStatusColor(self.airState.pm10Grade)
             self.pm10GradeLabel.text = self.switchStatus(self.airState.pm10Grade)
             self.pm10GradeLabel.textColor = self.switchStatusColor(self.airState.pm10Grade)
+            
             self.statusLabel.text = self.switchStatusString(self.airState.pm10Grade)
             
             self.khaiValueLabel.text = self.airState.khaiValue
