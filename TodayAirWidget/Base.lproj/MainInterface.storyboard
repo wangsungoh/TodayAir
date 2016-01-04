@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GodoM.otf">
+            <string>GodoM</string>
+            <string>GodoM</string>
+            <string>GodoM</string>
+            <string>GodoM</string>
+            <string>GodoM</string>
+            <string>GodoM</string>
+            <string>GodoM</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="TodayAirWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Po-XX-TqR">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="부림동" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoa-ZC-VaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="xoa-ZC-VaV" secondAttribute="height" multiplier="23:10" id="VCP-7a-nWI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GodoM" family="Godo" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="xoa-ZC-VaV" firstAttribute="leading" secondItem="0Po-XX-TqR" secondAttribute="leading" id="3Za-gV-TTS"/>
+                                    <constraint firstAttribute="width" secondItem="0Po-XX-TqR" secondAttribute="height" multiplier="23:10" id="6i9-7h-gdg"/>
+                                    <constraint firstAttribute="bottom" secondItem="xoa-ZC-VaV" secondAttribute="bottom" id="KIK-gw-0RI"/>
+                                    <constraint firstItem="xoa-ZC-VaV" firstAttribute="top" secondItem="0Po-XX-TqR" secondAttribute="top" id="nTz-ee-xmh"/>
+                                    <constraint firstAttribute="trailing" secondItem="xoa-ZC-VaV" secondAttribute="trailing" id="ucB-it-q1Q"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bub-Hk-Gb1">
+                                <rect key="frame" x="115" y="0.0" width="205" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSX-0g-8lT">
+                                        <rect key="frame" x="0.0" y="25" width="205" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미세먼지" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hg-ar-OV9">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="25"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="d6d-7P-cpI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GodoM" family="Godo" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUr-7l-0KV">
+                                                <rect key="frame" x="90" y="0.0" width="35" height="25"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="GodoM" family="Godo" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매우 나쁨" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLw-iy-Yxu">
+                                                <rect key="frame" x="133" y="0.0" width="73" height="25"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="GodoM" family="Godo" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SLw-iy-Yxu" secondAttribute="trailing" constant="-1" id="0SW-wm-E4w"/>
+                                            <constraint firstItem="vUr-7l-0KV" firstAttribute="leading" secondItem="7hg-ar-OV9" secondAttribute="trailing" constant="10" id="0qM-LG-1uD"/>
+                                            <constraint firstItem="SLw-iy-Yxu" firstAttribute="baseline" secondItem="7hg-ar-OV9" secondAttribute="baseline" id="7nh-ZP-dgG"/>
+                                            <constraint firstItem="7hg-ar-OV9" firstAttribute="leading" secondItem="uSX-0g-8lT" secondAttribute="leading" id="AGt-Rw-Ufn"/>
+                                            <constraint firstAttribute="trailing" secondItem="vUr-7l-0KV" secondAttribute="trailing" constant="80" id="AdB-uI-etf"/>
+                                            <constraint firstItem="vUr-7l-0KV" firstAttribute="bottom" secondItem="7hg-ar-OV9" secondAttribute="bottom" id="D47-ih-HcR"/>
+                                            <constraint firstAttribute="bottom" secondItem="7hg-ar-OV9" secondAttribute="bottom" id="EV4-4m-r0L"/>
+                                            <constraint firstItem="7hg-ar-OV9" firstAttribute="top" secondItem="uSX-0g-8lT" secondAttribute="top" id="MC4-LF-wYf"/>
+                                            <constraint firstItem="SLw-iy-Yxu" firstAttribute="leading" secondItem="vUr-7l-0KV" secondAttribute="trailing" constant="8" symbolic="YES" id="Xk6-qr-Vg5"/>
+                                            <constraint firstItem="SLw-iy-Yxu" firstAttribute="firstBaseline" secondItem="7hg-ar-OV9" secondAttribute="firstBaseline" id="lkD-Ve-yuZ"/>
+                                            <constraint firstItem="vUr-7l-0KV" firstAttribute="top" secondItem="7hg-ar-OV9" secondAttribute="top" id="vge-tX-3p7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7If-jd-xpf">
+                                        <rect key="frame" x="0.0" y="0.0" width="205" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="통합대기지수" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oas-xg-rgr">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="25"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="4SF-Ua-4J1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GodoM" family="Godo" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-TD-hD2">
+                                                <rect key="frame" x="90" y="0.0" width="35" height="25"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="GodoM" family="Godo" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="매우 나쁨" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPE-Uy-tCk">
+                                                <rect key="frame" x="133" y="0.0" width="73" height="25"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="GodoM" family="Godo" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Pbg-TD-hD2" firstAttribute="top" secondItem="7If-jd-xpf" secondAttribute="top" id="6Y6-0C-prm"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pbg-TD-hD2" secondAttribute="trailing" constant="80" id="7uk-0u-2EB"/>
+                                            <constraint firstItem="tPE-Uy-tCk" firstAttribute="firstBaseline" secondItem="Oas-xg-rgr" secondAttribute="firstBaseline" id="8pf-wK-NjF"/>
+                                            <constraint firstAttribute="bottom" secondItem="Oas-xg-rgr" secondAttribute="bottom" id="9XK-ha-wRq"/>
+                                            <constraint firstItem="Pbg-TD-hD2" firstAttribute="centerY" secondItem="Oas-xg-rgr" secondAttribute="centerY" id="AvV-dE-lPi"/>
+                                            <constraint firstItem="Pbg-TD-hD2" firstAttribute="leading" secondItem="Oas-xg-rgr" secondAttribute="trailing" constant="10" id="B89-wl-Xyt"/>
+                                            <constraint firstItem="tPE-Uy-tCk" firstAttribute="leading" secondItem="Pbg-TD-hD2" secondAttribute="trailing" constant="8" symbolic="YES" id="cTp-w3-CCJ"/>
+                                            <constraint firstItem="Oas-xg-rgr" firstAttribute="leading" secondItem="7If-jd-xpf" secondAttribute="leading" id="fD0-CS-fqL"/>
+                                            <constraint firstItem="Oas-xg-rgr" firstAttribute="top" secondItem="7If-jd-xpf" secondAttribute="top" id="pPq-pj-MRc"/>
+                                            <constraint firstItem="tPE-Uy-tCk" firstAttribute="baseline" secondItem="Oas-xg-rgr" secondAttribute="baseline" id="xY7-Qu-VQC"/>
+                                            <constraint firstAttribute="trailing" secondItem="tPE-Uy-tCk" secondAttribute="trailing" constant="-1" id="zpp-IN-zga"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="uSX-0g-8lT" firstAttribute="top" secondItem="7If-jd-xpf" secondAttribute="bottom" id="3dU-eH-FGs"/>
+                                    <constraint firstItem="uSX-0g-8lT" firstAttribute="leading" secondItem="Bub-Hk-Gb1" secondAttribute="leading" id="QSE-Ph-ieX"/>
+                                    <constraint firstItem="7If-jd-xpf" firstAttribute="top" secondItem="Bub-Hk-Gb1" secondAttribute="top" id="ZRX-Ao-DgU"/>
+                                    <constraint firstAttribute="trailing" secondItem="uSX-0g-8lT" secondAttribute="trailing" id="dMp-T7-HxS"/>
+                                    <constraint firstAttribute="bottom" secondItem="uSX-0g-8lT" secondAttribute="bottom" id="eCs-St-qz4"/>
+                                    <constraint firstItem="7If-jd-xpf" firstAttribute="leading" secondItem="uSX-0g-8lT" secondAttribute="leading" id="fNI-MY-3zT"/>
+                                    <constraint firstItem="uSX-0g-8lT" firstAttribute="trailing" secondItem="7If-jd-xpf" secondAttribute="trailing" id="kHI-fN-8Lj"/>
+                                    <constraint firstItem="uSX-0g-8lT" firstAttribute="top" secondItem="Bub-Hk-Gb1" secondAttribute="top" constant="25" id="xNI-yX-pPf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="Bub-Hk-Gb1" firstAttribute="top" secondItem="0Po-XX-TqR" secondAttribute="top" id="8jd-QS-9iV"/>
+                            <constraint firstItem="Bub-Hk-Gb1" firstAttribute="bottom" secondItem="FKl-LY-JtV" secondAttribute="top" id="A93-bb-zzu"/>
+                            <constraint firstItem="0Po-XX-TqR" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="FLb-0J-gYN"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="0Po-XX-TqR" secondAttribute="bottom" id="drO-NV-zox"/>
+                            <constraint firstAttribute="trailing" secondItem="Bub-Hk-Gb1" secondAttribute="trailing" id="nUD-A1-EQD"/>
+                            <constraint firstItem="Bub-Hk-Gb1" firstAttribute="leading" secondItem="0Po-XX-TqR" secondAttribute="trailing" id="oXP-io-vAw"/>
+                            <constraint firstItem="0Po-XX-TqR" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="zvw-lN-Mz4"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="50"/>
+                    <connections>
+                        <outlet property="khaiGrade" destination="tPE-Uy-tCk" id="IL8-tF-gT7"/>
+                        <outlet property="khaiValue" destination="Pbg-TD-hD2" id="SS3-FS-I64"/>
+                        <outlet property="pm10Grade" destination="SLw-iy-Yxu" id="HlB-p8-qYu"/>
+                        <outlet property="pm10Value" destination="vUr-7l-0KV" id="Het-lN-a0E"/>
+                        <outlet property="stationLabel" destination="xoa-ZC-VaV" id="isg-ZC-t81"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="285"/>
+        </scene>
+    </scenes>
+</document>

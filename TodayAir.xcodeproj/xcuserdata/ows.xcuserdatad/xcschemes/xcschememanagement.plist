@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TodayAirWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>848A83651BFF699C0067194D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>84C0F8E11BB2D8B100609003</key>
 		<dict>
 			<key>primary</key>

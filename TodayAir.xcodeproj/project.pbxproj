@@ -19,6 +19,11 @@
 		84804E9F1BD3790C00663D8D /* airstate_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 84804E9E1BD3790C00663D8D /* airstate_page.png */; settings = {ASSET_TAGS = (); }; };
 		84804EA11BD380E100663D8D /* select_station_page.png in Resources */ = {isa = PBXBuildFile; fileRef = 84804EA01BD380E100663D8D /* select_station_page.png */; settings = {ASSET_TAGS = (); }; };
 		84804EA31BD381BE00663D8D /* search_station.png in Resources */ = {isa = PBXBuildFile; fileRef = 84804EA21BD381BE00663D8D /* search_station.png */; settings = {ASSET_TAGS = (); }; };
+		8485D6AA1BFE0D6B0043214C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485D6A91BFE0D6B0043214C /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
+		848A83681BFF699C0067194D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848A83671BFF699C0067194D /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		848A836B1BFF699C0067194D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848A836A1BFF699C0067194D /* TodayViewController.swift */; };
+		848A836E1BFF699C0067194D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848A836C1BFF699C0067194D /* MainInterface.storyboard */; };
+		848A83721BFF699C0067194D /* TodayAirWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 848A83661BFF699C0067194D /* TodayAirWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		848B47C11BB82A8600837571 /* AirState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B47C01BB82A8600837571 /* AirState.swift */; settings = {ASSET_TAGS = (); }; };
 		848B47C91BB8416600837571 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B47C31BB8416600837571 /* HTTPRequestSerializer.swift */; settings = {ASSET_TAGS = (); }; };
 		848B47CA1BB8416600837571 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B47C41BB8416600837571 /* HTTPResponseSerializer.swift */; settings = {ASSET_TAGS = (); }; };
@@ -39,6 +44,15 @@
 		84EE97051BBA81FA00E5CC30 /* booting.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EE97041BBA81FA00E5CC30 /* booting.png */; settings = {ASSET_TAGS = (); }; };
 		84EF13031BEDBD1C00ECF66F /* btn_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EF13021BEDBD1C00ECF66F /* btn_select.png */; settings = {ASSET_TAGS = (); }; };
 		84F0EB701BB8F6D40071AFCE /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F0EB6F1BB8F6D40071AFCE /* SWXMLHash.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267EC1C035149002F0407 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267E61C035149002F0407 /* HTTPRequestSerializer.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267ED1C035149002F0407 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267E71C035149002F0407 /* HTTPResponseSerializer.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267EE1C035149002F0407 /* HTTPSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267E81C035149002F0407 /* HTTPSecurity.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267EF1C035149002F0407 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267E91C035149002F0407 /* HTTPStatusCode.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267F01C035149002F0407 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267EA1C035149002F0407 /* HTTPTask.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267F11C035149002F0407 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267EB1C035149002F0407 /* HTTPUpload.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267F41C0351C5002F0407 /* AirState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267F31C0351C5002F0407 /* AirState.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267F61C0351DA002F0407 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267F51C0351DA002F0407 /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
+		84F267F91C035202002F0407 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F267F81C035202002F0407 /* SWXMLHash.swift */; settings = {ASSET_TAGS = (); }; };
 		84F2CB6D1BB68E8000395264 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2CB6C1BB68E8000395264 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		84F2CB721BB6D68100395264 /* NanumBarunGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84F2CB6F1BB6D68100395264 /* NanumBarunGothic.ttf */; settings = {ASSET_TAGS = (); }; };
 		84F2CB731BB6D68100395264 /* GodoM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84F2CB701BB6D68100395264 /* GodoM.otf */; settings = {ASSET_TAGS = (); }; };
@@ -51,6 +65,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		848A83701BFF699C0067194D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C0F8DA1BB2D8B100609003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 848A83651BFF699C0067194D;
+			remoteInfo = TodayAirWidget;
+		};
 		84C0F8F71BB2D8B100609003 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84C0F8DA1BB2D8B100609003 /* Project object */;
@@ -67,6 +88,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		848A83761BFF699C0067194D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				848A83721BFF699C0067194D /* TodayAirWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2134DF2DABFE5493C37DDC2E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58317207DC531903EE8BAC1E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +117,14 @@
 		84804E9E1BD3790C00663D8D /* airstate_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airstate_page.png; sourceTree = "<group>"; };
 		84804EA01BD380E100663D8D /* select_station_page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_station_page.png; sourceTree = "<group>"; };
 		84804EA21BD381BE00663D8D /* search_station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_station.png; sourceTree = "<group>"; };
+		8485D6A91BFE0D6B0043214C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8485D6AC1BFE102C0043214C /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		848A83661BFF699C0067194D /* TodayAirWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayAirWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		848A83671BFF699C0067194D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		848A836A1BFF699C0067194D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		848A836D1BFF699C0067194D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		848A836F1BFF699C0067194D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848A83771BFF74EE0067194D /* TodayAir.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayAir.entitlements; sourceTree = "<group>"; };
 		848B47C01BB82A8600837571 /* AirState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirState.swift; sourceTree = "<group>"; };
 		848B47C31BB8416600837571 /* HTTPRequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestSerializer.swift; sourceTree = "<group>"; };
 		848B47C41BB8416600837571 /* HTTPResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseSerializer.swift; sourceTree = "<group>"; };
@@ -108,6 +151,16 @@
 		84EE97041BBA81FA00E5CC30 /* booting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = booting.png; sourceTree = "<group>"; };
 		84EF13021BEDBD1C00ECF66F /* btn_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_select.png; sourceTree = "<group>"; };
 		84F0EB6F1BB8F6D40071AFCE /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
+		84F0F7611C0057FB0007562F /* TodayAirWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TodayAirWidget.entitlements; sourceTree = "<group>"; };
+		84F267E61C035149002F0407 /* HTTPRequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestSerializer.swift; sourceTree = "<group>"; };
+		84F267E71C035149002F0407 /* HTTPResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseSerializer.swift; sourceTree = "<group>"; };
+		84F267E81C035149002F0407 /* HTTPSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSecurity.swift; sourceTree = "<group>"; };
+		84F267E91C035149002F0407 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		84F267EA1C035149002F0407 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		84F267EB1C035149002F0407 /* HTTPUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUpload.swift; sourceTree = "<group>"; };
+		84F267F31C0351C5002F0407 /* AirState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirState.swift; sourceTree = "<group>"; };
+		84F267F51C0351DA002F0407 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		84F267F81C035202002F0407 /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
 		84F2CB6C1BB68E8000395264 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		84F2CB6F1BB6D68100395264 /* NanumBarunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothic.ttf; sourceTree = "<group>"; };
 		84F2CB701BB6D68100395264 /* GodoM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GodoM.otf; sourceTree = "<group>"; };
@@ -120,6 +173,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		848A83631BFF699C0067194D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848A83681BFF699C0067194D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84C0F8DF1BB2D8B100609003 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,12 +224,37 @@
 			name = BWWalkthrough;
 			sourceTree = "<group>";
 		};
+		8485D6AB1BFE0D760043214C /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8485D6A91BFE0D6B0043214C /* Reachability.swift */,
+				8485D6AC1BFE102C0043214C /* Reachability.h */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		848A83691BFF699C0067194D /* TodayAirWidget */ = {
+			isa = PBXGroup;
+			children = (
+				84F267FA1C035209002F0407 /* SWXMLHash */,
+				84F267F71C0351DE002F0407 /* Reacgability */,
+				84F267F21C03514F002F0407 /* SwiftHttp */,
+				84F267F31C0351C5002F0407 /* AirState.swift */,
+				84F0F7611C0057FB0007562F /* TodayAirWidget.entitlements */,
+				848A836A1BFF699C0067194D /* TodayViewController.swift */,
+				848A836C1BFF699C0067194D /* MainInterface.storyboard */,
+				848A836F1BFF699C0067194D /* Info.plist */,
+			);
+			path = TodayAirWidget;
+			sourceTree = "<group>";
+		};
 		848B47C21BB83EE700837571 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				84F0EB6E1BB8F6BF0071AFCE /* SwiftHTTP */,
+				8485D6AB1BFE0D760043214C /* Reachability */,
 				84804E8F1BD35B1100663D8D /* BWWalkthrough */,
 				84F0EB711BB8F6DB0071AFCE /* SWXMLHash */,
-				84F0EB6E1BB8F6BF0071AFCE /* SwiftHTTP */,
 			);
 			name = External;
 			sourceTree = "<group>";
@@ -179,6 +265,7 @@
 				84C0F8E41BB2D8B100609003 /* TodayAir */,
 				84C0F8F91BB2D8B100609003 /* TodayAirTests */,
 				84C0F9041BB2D8B100609003 /* TodayAirUITests */,
+				848A83691BFF699C0067194D /* TodayAirWidget */,
 				84C0F8E31BB2D8B100609003 /* Products */,
 				6F2A5E0FE69BEE74FA382647 /* Pods */,
 				95E1F8A3A1C9C18F13CA9E00 /* Frameworks */,
@@ -191,6 +278,7 @@
 				84C0F8E21BB2D8B100609003 /* TodayAir.app */,
 				84C0F8F61BB2D8B100609003 /* TodayAirTests.xctest */,
 				84C0F9011BB2D8B100609003 /* TodayAirUITests.xctest */,
+				848A83661BFF699C0067194D /* TodayAirWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +286,7 @@
 		84C0F8E41BB2D8B100609003 /* TodayAir */ = {
 			isa = PBXGroup;
 			children = (
+				848A83771BFF74EE0067194D /* TodayAir.entitlements */,
 				848B47C21BB83EE700837571 /* External */,
 				84C0F9181BB2DE7300609003 /* Code */,
 				84C0F9171BB2DE5E00609003 /* Resources */,
@@ -294,6 +383,35 @@
 			name = SWXMLHash;
 			sourceTree = "<group>";
 		};
+		84F267F21C03514F002F0407 /* SwiftHttp */ = {
+			isa = PBXGroup;
+			children = (
+				84F267E61C035149002F0407 /* HTTPRequestSerializer.swift */,
+				84F267E71C035149002F0407 /* HTTPResponseSerializer.swift */,
+				84F267E81C035149002F0407 /* HTTPSecurity.swift */,
+				84F267E91C035149002F0407 /* HTTPStatusCode.swift */,
+				84F267EA1C035149002F0407 /* HTTPTask.swift */,
+				84F267EB1C035149002F0407 /* HTTPUpload.swift */,
+			);
+			name = SwiftHttp;
+			sourceTree = "<group>";
+		};
+		84F267F71C0351DE002F0407 /* Reacgability */ = {
+			isa = PBXGroup;
+			children = (
+				84F267F51C0351DA002F0407 /* Reachability.swift */,
+			);
+			name = Reacgability;
+			sourceTree = "<group>";
+		};
+		84F267FA1C035209002F0407 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				84F267F81C035202002F0407 /* SWXMLHash.swift */,
+			);
+			name = SWXMLHash;
+			sourceTree = "<group>";
+		};
 		84F2CB6E1BB6D61600395264 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				2134DF2DABFE5493C37DDC2E /* Pods.framework */,
+				848A83671BFF699C0067194D /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -315,6 +434,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		848A83651BFF699C0067194D /* TodayAirWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848A83751BFF699C0067194D /* Build configuration list for PBXNativeTarget "TodayAirWidget" */;
+			buildPhases = (
+				848A83621BFF699C0067194D /* Sources */,
+				848A83631BFF699C0067194D /* Frameworks */,
+				848A83641BFF699C0067194D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayAirWidget;
+			productName = TodayAirWidget;
+			productReference = 848A83661BFF699C0067194D /* TodayAirWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		84C0F8E11BB2D8B100609003 /* TodayAir */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C0F90A1BB2D8B100609003 /* Build configuration list for PBXNativeTarget "TodayAir" */;
@@ -325,10 +461,12 @@
 				84C0F8E01BB2D8B100609003 /* Resources */,
 				15957FC65548893ABCF76A26 /* Embed Pods Frameworks */,
 				7EDA98B41A4F764D99A2AAAB /* Copy Pods Resources */,
+				848A83761BFF699C0067194D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				848A83711BFF699C0067194D /* PBXTargetDependency */,
 			);
 			name = TodayAir;
 			productName = TodayAir;
@@ -380,9 +518,23 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ESKompany;
 				TargetAttributes = {
+					848A83651BFF699C0067194D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = V2BUPA9Y9F;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					84C0F8E11BB2D8B100609003 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = V2BUPA9Y9F;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					84C0F8F51BB2D8B100609003 = {
 						CreatedOnToolsVersion = 7.0;
@@ -410,11 +562,20 @@
 				84C0F8E11BB2D8B100609003 /* TodayAir */,
 				84C0F8F51BB2D8B100609003 /* TodayAirTests */,
 				84C0F9001BB2D8B100609003 /* TodayAirUITests */,
+				848A83651BFF699C0067194D /* TodayAirWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		848A83641BFF699C0067194D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848A836E1BFF699C0067194D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84C0F8E01BB2D8B100609003 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,12 +668,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		848A83621BFF699C0067194D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F267F01C035149002F0407 /* HTTPTask.swift in Sources */,
+				84F267EF1C035149002F0407 /* HTTPStatusCode.swift in Sources */,
+				84F267F11C035149002F0407 /* HTTPUpload.swift in Sources */,
+				84F267F91C035202002F0407 /* SWXMLHash.swift in Sources */,
+				848A836B1BFF699C0067194D /* TodayViewController.swift in Sources */,
+				84F267EE1C035149002F0407 /* HTTPSecurity.swift in Sources */,
+				84F267F61C0351DA002F0407 /* Reachability.swift in Sources */,
+				84F267EC1C035149002F0407 /* HTTPRequestSerializer.swift in Sources */,
+				84F267F41C0351C5002F0407 /* AirState.swift in Sources */,
+				84F267ED1C035149002F0407 /* HTTPResponseSerializer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84C0F8DE1BB2D8B100609003 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				848B47CD1BB8416600837571 /* HTTPTask.swift in Sources */,
 				848B47CE1BB8416600837571 /* HTTPUpload.swift in Sources */,
+				8485D6AA1BFE0D6B0043214C /* Reachability.swift in Sources */,
 				84804E971BD35BCC00663D8D /* BWWalkthroughViewController.swift in Sources */,
 				84C0F8E61BB2D8B100609003 /* AppDelegate.swift in Sources */,
 				848B47CB1BB8416600837571 /* HTTPSecurity.swift in Sources */,
@@ -551,6 +730,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		848A83711BFF699C0067194D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 848A83651BFF699C0067194D /* TodayAirWidget */;
+			targetProxy = 848A83701BFF699C0067194D /* PBXContainerItemProxy */;
+		};
 		84C0F8F81BB2D8B100609003 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 84C0F8E11BB2D8B100609003 /* TodayAir */;
@@ -564,6 +748,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		848A836C1BFF699C0067194D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848A836D1BFF699C0067194D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		84C0F8E91BB2D8B100609003 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -583,6 +775,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		848A83731BFF699C0067194D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayAirWidget/TodayAirWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TodayAirWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eskompany.TodayAir.TodayAirWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		848A83741BFF699C0067194D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayAirWidget/TodayAirWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TodayAirWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eskompany.TodayAir.TodayAirWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		84C0F9081BB2D8B100609003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -669,12 +893,16 @@
 			baseConfigurationReference = 98F83E901DD063EA6348AEA8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TodayAir/TodayAir.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TodayAir/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eskompany.TodayAir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -683,12 +911,16 @@
 			baseConfigurationReference = 58317207DC531903EE8BAC1E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TodayAir/TodayAir.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TodayAir/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eskompany.TodayAir;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -743,6 +975,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		848A83751BFF699C0067194D /* Build configuration list for PBXNativeTarget "TodayAirWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848A83731BFF699C0067194D /* Debug */,
+				848A83741BFF699C0067194D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84C0F8DD1BB2D8B100609003 /* Build configuration list for PBXProject "TodayAir" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

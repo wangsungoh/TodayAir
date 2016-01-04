@@ -49,8 +49,9 @@ class TodayAirViewController: UIViewController, BWWalkthroughViewControllerDeleg
     
     let pm10_str_contents_nodata = (
         "데이터가 없네요.\n날이 너무 좋아서 그런가봐요.",
-        "해당 관측소에서\n데이터를 가져올수 없습니다."
-    )
+        "해당 관측소에서\n데이터를 가져올수 없습니다.",
+        "네트워크 상태를 확인해보시겠어요?",
+        "네트워크 상태가 불안정해 보여요.")
     
     var stations = [Station]()
     var airState: AirState!
@@ -164,6 +165,7 @@ class TodayAirViewController: UIViewController, BWWalkthroughViewControllerDeleg
                 self.stationLabel.text = self.stationName
                 
             });
+            
             
             let loadingNotification = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
             loadingNotification.mode = MBProgressHUDMode.Indeterminate
@@ -323,17 +325,43 @@ class TodayAirViewController: UIViewController, BWWalkthroughViewControllerDeleg
             case 1:
                 return self.pm10_str_contents_nodata.1
             case 2:
-                return self.pm10_str_contents_nodata.0
+                return self.pm10_str_contents_nodata.2
             case 3:
-                return self.pm10_str_contents_nodata.1
+                return self.pm10_str_contents_nodata.3
             default:
-                return self.pm10_str_contents_nodata.0
+                return self.pm10_str_contents_nodata.3
             }
         }
     }
     
     func getAirState() {
         self.airState = AirState(stationName: self.stationName!)
+        self.airState.setupReachability()
+        self.airState.startNotifier()
+        
+        let shared = NSUserDefaults(suiteName: "group.todayair")
+        shared?.setObject(self.stationName, forKey: "station")
+        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) self.stationName:\(self.stationName!)")
+        
+        shared?.synchronize()
+
+        if self.airState.isNetworkReachable {
+            print("Network Available")
+        } else {
+            print("Network not Available")
+            let alert = UIAlertController(title: "인터넷 연결 실패", message: "네트워크 상태가 불안정합니다.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .Default, handler: { action in
+                switch action.style{
+                case .Default:
+                    break
+                default:
+                    break
+                }
+            }))
+            
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
         self.airState.getAirState()
         
         NSThread.sleepForTimeInterval(1)
@@ -365,21 +393,6 @@ class TodayAirViewController: UIViewController, BWWalkthroughViewControllerDeleg
 
             self.topView.backgroundColor = self.switchStatusColor(self.airState.khaiGrade)
         });
-
-//        
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) datatime is \(self.airState.dataTime)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) so2Value is \(self.airState.so2Value)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) so2Grade is \(self.airState.so2Grade)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) coValue is \(self.airState.coValue)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) coGrade is \(self.airState.coGrade)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) o3Value is \(self.airState.o3Value)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) o3Grade is \(self.airState.o3Grade)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) no2Value is \(self.airState.no2Value)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) no2Grade is \(self.airState.no2Grade)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) pm10Value is \(self.airState.pm10Value)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) pm10Grade is \(self.airState.pm10Grade)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) khaiValue is \(self.airState.khaiValue)")
-//        print("\(__FILE__) \(__FUNCTION__) \(__LINE__) khaiGrade is \(self.airState.khaiGrade)")
     }
     
     @IBAction func showTerms(sender: AnyObject) {
